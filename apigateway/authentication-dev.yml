@@ -25,5 +25,5 @@ logging:
   path: ${logPath:D:/temp/logs}
   
 constants:
-  accessTimeout: ${accessTimeout:600}
+  accessTimeout: ${accessTimeout:6000000}
   
