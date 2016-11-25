@@ -7,8 +7,8 @@ jdbc:
     
 mybatis: 
   business:
-    typeAliasesPackage: com.vankeservice.crm.apigateway.entity.business
-    mapperLocations: classpath:/com/vankeservice/crm/apigateway/dao/business/sql/*.xml
+    typeAliasesPackage: com.sfxie.sharecloud.apigateway.authentication.entity.business
+    mapperLocations: classpath:/com/sfxie/sharecloud/apigateway/authentication/dao/business/sql/*.xml
     configLocation: config/mybatis/mybatis-config.xml
     
 api:
