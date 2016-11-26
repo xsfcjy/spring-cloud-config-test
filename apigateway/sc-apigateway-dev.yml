@@ -16,3 +16,30 @@ logging:
   
 constants:
   accessTimeout: ${accessTimeout:6000000} 
+  
+error: 
+  auth:
+    emptyTime: 时间戳参数(ts)不能为空！
+    emptyAppId: appId不能为空！
+    emptyToken: token不能为空！
+    timeout: ts已过期！
+    timeFormat: 时间戳参数格式错误！
+    denyInterface: 您没有此接口的访问权限！
+    denyToken: token无效！
+    emptyAccess: 您没有申请访问配置，请联系管理员！
+    emptyInterface: 您还没有分配访问接口，请联系管理员！
+    unableInterface: 此接口已过期！
+    errorMethod: http接口请求方式错误，请以{0}方式请求接口！
+code: 
+  auth:
+    emptyTime: empty_time
+    emptyAppId: empty_appId
+    emptyToken: empty_token
+    timeout: timeout
+    timeFormat: timeFormat
+    denyInterface: deny_interface
+    denyToken: deny_token
+    emptyAccess: empty_access
+    emptyInterface: empty_interface
+    unableInterface: unable_interface
+    errorMethod: errorMethod
