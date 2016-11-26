@@ -1,10 +1,3 @@
- 
-logging:
-  path: ${logPath:D:/temp/logs}
-  
-constants:
-  accessTimeout: ${accessTimeout:6000000} 
-  
 error: 
     auth:
       emptyTime: 时间戳参数(ts)不能为空！
