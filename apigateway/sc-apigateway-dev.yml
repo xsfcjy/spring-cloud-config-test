@@ -19,7 +19,7 @@ constants:
   
 error:
   auth:
-    emptyTime: ss
+    emptyTime: 时间戳参数(ts)不能为空！
 code:
   auth:
     emptyTime: empty_time
