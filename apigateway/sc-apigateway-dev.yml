@@ -19,7 +19,7 @@ constants:
   
 error:
   auth:
-    emptyTime: 时间戳参数(ts)不能为空！
+    emptyTime: 时间戳参数(ts)不能为空SS！
     emptyAppId: appId不能为空！
     emptyToken: token不能为空！
     timeout: ts已过期！
