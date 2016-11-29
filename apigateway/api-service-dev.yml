@@ -1,1 +1,3 @@
 name: xiesf
+error.auth.emptyTime: emptyTime
+error.auth.emptyToken: emptyToken
