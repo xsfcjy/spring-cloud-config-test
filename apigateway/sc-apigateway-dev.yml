@@ -19,7 +19,7 @@ zuul:
   ##serviceA的请求直接定位到具体的某台服务器
   routes:
     testService:
-      path=/api-service/**
+      path: /api-service/**
     testService:
       serviceId: api-service
       #url: http://localhost:7071/
