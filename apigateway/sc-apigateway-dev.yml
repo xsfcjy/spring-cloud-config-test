@@ -1,7 +1,7 @@
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http\://server1\:2181/eureka/,http\://server2\:2182/eureka/,http\://server3\:2183/eureka/
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http\://server1\:2181/eureka/,http\://server2\:2182/eureka/,http\://server3\:2183/eureka/
 zuul:
   max:
     host.:
