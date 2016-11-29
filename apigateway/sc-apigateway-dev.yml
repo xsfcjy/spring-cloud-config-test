@@ -20,7 +20,6 @@ zuul:
   routes:
     testService:
       path: /api-service/**
-    testService:
       serviceId: api-service
       #url: http://localhost:7071/
 
