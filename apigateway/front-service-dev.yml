@@ -1,0 +1,10 @@
+---
+# 开发环境配置
+spring:
+  profiles: dev
+  
+name: xiesf
+error: 
+  auth:
+    emptyTime: emptyTime
+    emptyToken: emptyToken
