@@ -6,5 +6,5 @@ spring:
 name: xiesf
 error: 
   auth:
-    emptyTime: emptyTime111
-    emptyToken: emptyToken111
+    emptyTime: emptyTime
+    emptyToken: emptyToken
