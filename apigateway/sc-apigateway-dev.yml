@@ -22,6 +22,10 @@ zuul:
       path: /api-service/**
       serviceId: api-service
       #url: http://localhost:7071/
+    frontService:
+      path: /front-service/**
+      serviceId: front-service
+      #url: http://localhost:7061/
 
 endpoints:
   restart:
