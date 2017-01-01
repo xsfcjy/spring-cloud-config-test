@@ -33,7 +33,7 @@ endpoints:
 
 spring:
   rabbitmq:
-    host: xsfcjy.oicp.net
+    host: rabbitmq
     port: 5672
     username: admin
     password: mypass
