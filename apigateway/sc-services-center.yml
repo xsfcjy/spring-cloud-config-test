@@ -10,3 +10,11 @@ mybatis:
     typeAliasesPackage: com.sfxie.services.center.pojo
     mapperLocations: classpath:/com/sfxie/services/center/dao/sql/*.xml
     configLocation: config/mybatis/mybatis-config.xml     
+spring:
+  rabbitmq:
+    host: rabbitmq
+    port: 5672
+    username: admin
+    password: mypass
+  zipkin:
+    base-url: http://zipkin-server:9411
