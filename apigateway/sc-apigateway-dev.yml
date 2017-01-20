@@ -33,21 +33,22 @@ endpoints:
 
 spring:
   rabbitmq:
-    host: rabbitmq
+    host: xsfcjy.oicp.net
     port: 5672
     username: admin
     password: mypass
   zipkin:
-    base-url: http://zipkin-server:9411
+    base-url: http://xsfcjy.oicp.net:9411
     
 
 jdbc: 
   business:
     driverClassName: com.mysql.jdbc.Driver
-    username: root
-    password: root
+    username: apigateway_root
+    password: 123456
     #url: jdbc:mysql://xsfcjy.oicp.net:8607/sfxie_oa?characterEncoding=utf-8&amp;tinyInt1isBit=false
-    url: jdbc:mysql://mysql_scapigateway:3306/sc_apigateway?characterEncoding=utf-8&amp;tinyInt1isBit=false
+    #url: jdbc:mysql://mysql_scapigateway:3306/sc_apigateway?characterEncoding=utf-8&amp;tinyInt1isBit=false
+    url: jdbc:mysql://xsfcjy.oicp.net:8066/sc_apigateway?characterEncoding=utf-8&amp;tinyInt1isBit=false
     
 mybatis: 
   business:
