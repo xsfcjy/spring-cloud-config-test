@@ -32,6 +32,8 @@ endpoints:
     enabled: true
 
 spring:
+  profiles:
+    active: changeIp
   rabbitmq:
     host: xsfcjy.oicp.net
     port: 5672
