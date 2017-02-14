@@ -26,6 +26,9 @@ zuul:
       path: /front-service/**
       serviceId: front-service
       #url: http://localhost:7061/
+    　vankeservice:
+      path: /vankeservice/**
+      url: http://10.0.73.17:16802
 
 endpoints:
   restart:
