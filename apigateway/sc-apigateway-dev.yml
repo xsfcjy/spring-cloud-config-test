@@ -2,9 +2,11 @@
 #  client:
 #    serviceUrl:
 #      defaultZone: http\://server1\:2181/eureka/,http\://server2\:2182/eureka/,http\://server3\:2183/eureka/
+
+#zuul.SendErrorFilter.post.disable=true
 zuul:
   max:
-    host.:
+    host:
       connections: 500
   host:
     socket-timeout-millis: 60000
@@ -22,9 +24,9 @@ zuul:
       path: /**
       url: http://10.0.73.17:16802
 
-endpoints:
-  restart:
-    enabled: true
+#endpoints:
+#  restart:
+#    enabled: true
 
 spring:
   profiles:
