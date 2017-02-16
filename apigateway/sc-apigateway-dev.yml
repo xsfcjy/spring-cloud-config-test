@@ -28,7 +28,10 @@ zuul:
       #url: http://localhost:7061/
     　vankeservice:
       path: /vankeservice/**
-      url: http://10.0.73.17:16802
+      #http://10.0.73.17:16802/api/partner/park/customer/basic/update
+vankeservice:
+  ribbon:
+    listOfServers: 10.0.73.17:16802
 
 endpoints:
   restart:
