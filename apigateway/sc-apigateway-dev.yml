@@ -18,24 +18,9 @@ zuul:
       path: post
   ##serviceA的请求直接定位到具体的某台服务器
   routes:
-    testService:
-      path: /api-service/**
-      serviceId: api-service
-      #url: http://localhost:7071/
-    frontService:
-      path: /front-service/**
-      serviceId: front-service
-      #url: http://localhost:7061/
     　vankeservice:
-      path: /vankeservice/**
-      serviceId: vankeservice
-      #http://10.0.73.17:16802/api/partner/park/customer/basic/update
-vankeservice:
-  ribbon:
-    listOfServers: 10.0.73.17:16802
-ribbon:
-  eureka:
-    enabled: false
+      path: /**
+      url: http://10.0.73.17:16802
 
 endpoints:
   restart:
