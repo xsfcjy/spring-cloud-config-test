@@ -4,26 +4,27 @@
 #      defaultZone: http\://server1\:2181/eureka/,http\://server2\:2182/eureka/,http\://server3\:2183/eureka/
 
 #zuul.SendErrorFilter.post.disable=true
-zuul:
-  max:
-    host:
-      connections: 500
-  host:
-    socket-timeout-millis: 60000
-    connect-timeout-millis: 60000
-  #filter:
-    #pre:
-      #path: pre
-    #routing:
-      #path: route
-    #post:
-      #path: post
-  ##serviceA的请求直接定位到具体的某台服务器
-  routes:
-    　vankeservice:
-      path: /**
-      url: http://10.0.73.17:16802
 
+zuul:
+  #Service will be mapped under the /api URI
+  prefix: /api
+#  Uncomment to disable auto-registering all services read from Eureka
+#  ignoredServices: '*'
+  routes:
+    test:
+      path: /redirect/**
+      url: http://www.baidu.com
+    customer-by-address:
+      path: /customer-by-address/**
+      url: http://localhost:9098
+    customer-by-service:
+      path: /customer-by-service/**
+      serviceId: CUSTOMER-SERVICE
+    static:
+      path: /static/**
+    　vankeservice:
+      path: /vankeservice/**
+      url: http://10.0.73.17:16802
 #endpoints:
 #  restart:
 #    enabled: true
