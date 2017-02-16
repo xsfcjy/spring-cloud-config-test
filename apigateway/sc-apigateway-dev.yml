@@ -22,7 +22,7 @@ zuul:
       serviceId: CUSTOMER-SERVICE
     static:
       path: /static/**
-    　vankeservice:
+    vankeservice:
       path: /vankeservice/**
       stripPrefix: false
       #url: http://10.0.73.17:16802/api
