@@ -24,7 +24,7 @@ zuul:
       path: /static/**
     　vankeservice:
       path: /vankeservice/**
-      url: http://10.0.73.17:16802
+      url: http://10.0.73.17:16802/api
 #endpoints:
 #  restart:
 #    enabled: true
