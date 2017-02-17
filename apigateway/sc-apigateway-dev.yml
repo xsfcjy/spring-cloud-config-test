@@ -24,14 +24,13 @@ zuul:
       path: /static/**
     vankeservice:
       path: /vankeservice/**
-      url: /api
       stripPrefix: true  
 ribbon:
   eureka:
     enabled: false
 vankeservice:
   ribbon:
-    listOfServers: 10.0.73.17:16802
+    listOfServers: 10.0.73.17:16802/api
 #endpoints:
 #  restart:
 #    enabled: true
