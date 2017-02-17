@@ -24,8 +24,8 @@ zuul:
       path: /static/**
     vankeservice:
       path: /vankeservice/**
+      url: /api
       stripPrefix: true  
-      #url: http://10.0.73.17:16802/api
 ribbon:
   eureka:
     enabled: false
