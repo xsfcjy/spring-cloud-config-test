@@ -36,7 +36,7 @@ vankeservice:
     listOfServers: 10.0.73.17:16802
 partner:
   ribbon:
-    listOfServers: 10.39.35.87:8081
+    listOfServers: 10.39.35.872:8081
 #endpoints:
 #  restart:
 #    enabled: true
