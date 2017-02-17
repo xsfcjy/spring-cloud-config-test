@@ -25,6 +25,10 @@ zuul:
     vankeservice:
       path: /vankeservice/**
       stripPrefix: true  
+    partner:
+      path: /partner/**
+      stripPrefix: false
+      url: /api/partner
 ribbon:
   eureka:
     enabled: false
