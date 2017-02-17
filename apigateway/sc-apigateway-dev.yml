@@ -28,7 +28,6 @@ zuul:
     partner:
       path: /partner/**
       stripPrefix: false
-      url: /api/partner
 ribbon:
   eureka:
     enabled: false
@@ -37,7 +36,7 @@ vankeservice:
     listOfServers: 10.0.73.17:16802
 partner:
   ribbon:
-    listOfServers: 10.0.73.17:16802
+    listOfServers: 10.39.35.87:8081
 #endpoints:
 #  restart:
 #    enabled: true
