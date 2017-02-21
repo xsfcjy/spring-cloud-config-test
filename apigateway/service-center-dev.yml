@@ -1,0 +1,25 @@
+spring:
+  rabbitmq:
+    host: xsfcjy.oicp.net
+    port: 5672
+    username: admin
+    password: mypass
+  zipkin:
+    base-url: http://xsfcjy.oicp.net:9411
+    
+
+jdbc: 
+  mycat:
+    driverClassName: com.mysql.jdbc.Driver
+    username: center_root
+    password: 123456
+    url: jdbc:mysql://xsfcjy.oicp.net:8066/sc_center?characterEncoding=utf-8&amp;tinyInt1isBit=false
+    
+mybatis: 
+  center:
+    typeAliasesPackage: com.sfxie.services.center.pojo
+    mapperLocations: classpath:/com/sfxie/services/center/dao/sql/*.xml
+    configLocation: config/mybatis/mybatis-config.xml
+     
+logging:
+  path: ${logPath:D:/temp/logs/service/center}
